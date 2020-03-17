@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid-button-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 150px;
+}
+
+.start-game-btn {
+  width: 120px;
+  height: 50px;
+  margin-top: 130px;
+  background: lightgoldenrodyellow;
+  font-size: 22px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+
+.start-game-btn:disabled {
+  background-color: darkorchid;
+  color: white;
+  cursor: not-allowed;
+}
+
+
+.start-game-btn:hover {
+  background-color: darkorchid;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-row {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-column {
+  width: 100px;
+  height: 100px;
+  background-color: darkmagenta;
+  margin: 2px;
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
 }
+
+.grid-column:hover {
+  background-color: darkorchid;
+}
+
+
+.active::before {
+  content: '';
+  background: url("https://image.flaticon.com/icons/svg/1531/1531126.svg");
+  background-size: contain;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.right-answer {
+  background-color: lightgreen;
+}
+
+.wrong-answer {
+  background-color: red;
+}
+
