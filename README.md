@@ -1,4 +1,4 @@
 Labyrinth game 
-Test Task [Create React App](https://github.com/facebook/create-react-app).
+Test Task [Create React App]((https://nizkiyVorobey.github.io/labyrinth/)).
 
 
